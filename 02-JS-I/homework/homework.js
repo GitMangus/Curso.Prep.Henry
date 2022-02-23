@@ -198,6 +198,10 @@ function combinarNombres(nombre, apellido) {
   var combinar = nombre + ' ' + apellido;
   return combinar;
 }
+/* NO HACE FALTA GUARDAR EN UNA VARIABLE. SIMPLEMENTE SE PUEDE HACER RETURN nombre + " " + apellido   (no hace falta tampoco poner ; al final en Js en JAVA sí hay que ponerlo)
+*/
+
+
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
@@ -205,6 +209,8 @@ function obtenerSaludo(nombre) {
   // Tu código:
   return 'Hola' + ' ' + nombre + '!';
 }
+/* Otra opción: return "Hola " + nombre + "!"
+*/
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
@@ -246,7 +252,7 @@ function esVocal(letra){
     return "Dato incorrecto"
   }
   
-  if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
+  else if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
     return "Es vocal";
       
     }

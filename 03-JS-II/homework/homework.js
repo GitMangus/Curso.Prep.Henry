@@ -91,6 +91,7 @@ function esDiezOCinco(numero) {
       return false;
     }
   }
+  /* OTRA FORMA DE HACERLO DIRECTAMENTE SERIA:   return numero ===10 || numero ===5*/
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
@@ -102,6 +103,8 @@ function estaEnRango(numero) {
     return false;
   }
 }
+
+/* OTRA FORMA DE HACERLO DIRECTAMENTE SERIA:   return numero <50 && numero >20 */
 
 function esEntero(numero) {
   // Devuelve "true" si "numero" es un entero (int/integer)
@@ -117,6 +120,7 @@ function esEntero(numero) {
    return false;
  }
 }
+/* OTRA FORMA DE HACERLO DIRECTAMENTE SERIA:   return numero % 1 ===0 */
 
 function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3, devuelve "fizz"
@@ -134,6 +138,11 @@ function fizzBuzz(numero) {
     return numero;
   }
 }
+
+/* OTRA FORMA DE HACERLO DIRECTAMENTE SERIA:   if(numero % 15 === 0) return "fizzbuzz"
+                                                if(numero % 3 === 0) return "fizz"
+                                                if(numero % 5 === 0) return "buzz"
+                                                return numero;*/
 
 function operadoresLogicos(num1, num2, num3) {
   //La función recibe tres números distintos. 
@@ -173,7 +182,7 @@ function esPrimo(numero) {
   if ( numero ===2){
     return true;
   }
-  for (var i = 2; i < numero; i++){
+  for (i = 2; i < numero; i++){
     if (numero % i === 0){
       return false;
     } else {
@@ -181,6 +190,7 @@ function esPrimo(numero) {
     }
   }
 }
+/* OTRA FORMA SERIA: if (numero === 0 || numero ===1){ return false} */
 
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
@@ -219,6 +229,20 @@ function tieneTresDigitos(numero){
   
 }
 
+/* OTRA FORMA DE HACERLO DIRECTAMENTE SERIA:   
+
+var toString = numero.toString()
+
+if (toString.length ===3){
+  return true;
+} else{
+  return false;
+}
+
+
+
+*/
+
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
@@ -234,7 +258,17 @@ while(i < 8);
 return a;
 }
 
+/* OTRA FORMA DE HACERLO DIRECTAMENTE SERIA:   
 
+var num = 1
+var suma = numero
+do{
+  suma = suma +5;
+  num++
+} while  (num < 9);
+return suma;
+
+*/
 
 
 
